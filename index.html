@@ -51,19 +51,7 @@
             });
         });
         
-        //submitbtn
-           $('#submitbtn').click(function () {
-                liff.sendMessages([
-                 {
-                     type: 'text',
-                     text: 'hi,'+$('#name').val()+'thanks for ordering'+'set meal1*'+$('#b1').val()+'&set meal2*'+$('#b2').val()+'&set meal3*'+$('#b3').val()
-                 }
-                ])
-               .then(() => {
-                   alert('thanks for ordering');
-               })
-            });
-        });
+ 
         
     </script>
 </head>
