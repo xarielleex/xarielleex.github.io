@@ -50,6 +50,19 @@
                })
             });
         });
+           //submitbtn
+           $('#submitbtn').click(function () {
+                liff.sendMessages([
+                 {
+                     type: 'text',
+                     text: $('#name').val()
+                 }
+                ])
+               .then(() => {
+                   alert('thanks for ordering');
+               })
+            });
+        });
         
  
         
