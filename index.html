@@ -42,7 +42,7 @@
                 liff.sendMessages([
                  {
                      type: 'text',
-                     text: $('#B1').val()+'0'
+                     text: '您點了套餐A+'$('#B1').val()+'份'+'&套餐B+'$('#B2').val()+'份'+'&套餐C+'$('#B3').val()+'份'
                  }
                 ])
                .then(() => {
@@ -61,11 +61,11 @@
                  <input class="form-control" type="text" id="Name" /> <br />
                  <label>phone:</label>
                  <input class="form-control" type="text" id="Phone" /><br />
-                 <label>number of set meal1:</label>
+                 <label>number of combo A:</label>
                  <input class="form-control" type="text" id="B1" value="0"/> <br />
-                 <label>number of set meal2:</label>
+                 <label>number of combo B:</label>
                  <input class="form-control" type="text" id="B2" value="0" /><br />
-                 <label>number of set meal3:</label>
+                 <label>number of combo C:</label>
                  <input class="form-control" type="text" id="B3"  value="0"/> <br /> 
                  <button class="btn btn-primary" id="Submitbtn">Submit</button>
                  <label>user id:</label><br />
