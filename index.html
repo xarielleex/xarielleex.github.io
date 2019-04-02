@@ -51,7 +51,18 @@
             });
         });
            //submitbtn
-           
+           $('#submitbtn').click(function () {
+                liff.sendMessages([
+                 {
+                     type: 'text',
+                     text: $('#msg').val()
+                 }
+                ])
+               .then(() => {
+                   alert('done');
+               })
+            });
+        });
  
         
     </script>
